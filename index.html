@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FAF8F4" />
+
+  <title>AMS_Renov — Remodelações Interiores</title>
+  <meta name="description" content="AMS_Renov — Remodelações interiores, pladur, isolamento, microcimento, pintura e acabamentos em Matosinhos e Porto. Peça orçamento gratuito." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AMS_Renov — Remodelações Interiores" />
+  <meta property="og:description" content="Especialistas em pladur, isolamento, microcimento, pintura e acabamentos interiores em Matosinhos e Porto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_PT" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__mark">
+        <span class="preloader__name">AMS<span class="u">_</span>RENOV</span>
+        <span class="preloader__slogan" data-fr="Nous faisons la différence">Fazemos a diferença</span>
+      </div>
+      <div class="preloader__bar"><span class="preloader__fill" id="preloaderFill"></span></div>
+      <div class="preloader__pct" id="preloaderPct">00</div>
+    </div>
+  </div>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="AMS_Renov — início">
+        <span class="nav__logo">AMS<span class="u">_</span>RENOV</span>
+        <span class="nav__tag" data-fr="Nous faisons la différence">Fazemos a diferença</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <button class="nav__close" id="navClose" aria-label="Fechar menu"></button>
+        <a href="#servicos" data-fr="Services">Serviços</a>
+        <a href="#interiores" data-fr="Intérieurs">Interiores</a>
+        <a href="#projetos" data-fr="Projets">Projetos</a>
+        <a href="#processo" data-fr="Processus">Processo</a>
+        <a href="#sobre" data-fr="À propos">Sobre</a>
+        <a href="#contactos" data-fr="Contact">Contactos</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="nav__lang" id="langToggle" aria-label="Mudar idioma / Changer de langue">
+          <span class="nav__lang-opt is-active" data-lang="pt">PT</span>
+          <span class="nav__lang-sep">·</span>
+          <span class="nav__lang-opt" data-lang="fr">FR</span>
+        </button>
+        <a href="#contactos" class="btn btn--gold nav__cta" data-fr="Devis gratuit">Orçamento grátis</a>
+        <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile menu backdrop -->
+  <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal-up" data-fr="Rénovations intérieures · Matosinhos &amp; Porto">Remodelações interiores · Matosinhos &amp; Porto</p>
+
+        <h1 class="hero__title" data-fr-html="&lt;span class=&quot;line&quot;&gt;&lt;span&gt;Rénovations&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span&gt;intérieures avec&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span&gt;&lt;em&gt;détail&lt;/em&gt;, qualité&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span&gt;et vision&lt;/span&gt;&lt;/span&gt;">
+          <span class="line"><span>Remodelações</span></span>
+          <span class="line"><span>interiores com</span></span>
+          <span class="line"><span><em>detalhe</em>, qualidade</span></span>
+          <span class="line"><span>e visão</span></span>
+        </h1>
+
+        <p class="hero__subtitle reveal-up" data-fr="Spécialistes en placoplâtre, isolation, microciment, peinture et finitions intérieures à Matosinhos et Porto.">
+          Especialistas em pladur, isolamento, microcimento, pintura e acabamentos
+          interiores em Matosinhos e Porto.
+        </p>
+
+        <div class="hero__actions reveal-up">
+          <a href="#contactos" class="btn btn--gold btn--lg" data-magnetic data-fr="Pedir orçamento grátis">Pedir orçamento grátis</a>
+          <a href="#servicos" class="btn btn--ghost btn--lg" data-magnetic data-fr="Voir les services">Ver serviços</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll reveal-up">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE / IMPACTO ===================== -->
+    <section class="impact" id="impacto">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span data-fr="Nous faisons la différence">Fazemos a diferença</span><span class="dot">✦</span>
+          <span data-fr="Rénovations intérieures">Remodelações interiores</span><span class="dot">✦</span>
+          <span data-fr="Finitions modernes">Acabamentos modernos</span><span class="dot">✦</span>
+          <span data-fr="Devis gratuits">Orçamentos gratuitos</span><span class="dot">✦</span>
+          <span data-fr="Entreprise luso-française">Empresa luso-francesa</span><span class="dot">✦</span>
+          <span data-fr="Nous faisons la différence">Fazemos a diferença</span><span class="dot">✦</span>
+          <span data-fr="Rénovations intérieures">Remodelações interiores</span><span class="dot">✦</span>
+          <span data-fr="Finitions modernes">Acabamentos modernos</span><span class="dot">✦</span>
+          <span data-fr="Devis gratuits">Orçamentos gratuitos</span><span class="dot">✦</span>
+          <span data-fr="Entreprise luso-française">Empresa luso-francesa</span><span class="dot">✦</span>
+        </div>
+      </div>
+
+      <div class="impact__stats container">
+        <div class="stat reveal-up">
+          <span class="stat__num" data-count="100">0</span><span class="stat__sym">%</span>
+          <span class="stat__label" data-fr="Souci du détail">Foco no detalhe</span>
+        </div>
+        <div class="stat reveal-up">
+          <span class="stat__num" data-count="10">0</span><span class="stat__sym">+</span>
+          <span class="stat__label" data-fr="Services intérieurs">Serviços interiores</span>
+        </div>
+        <div class="stat reveal-up">
+          <span class="stat__num" data-count="2">0</span>
+          <span class="stat__label" data-fr="Identité luso-française">Identidade luso-francesa</span>
+        </div>
+        <div class="stat reveal-up">
+          <span class="stat__sym left">€</span><span class="stat__num">0</span>
+          <span class="stat__label" data-fr="Devis sans engagement">Orçamento sem compromisso</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="services section" id="servicos">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-reveal data-fr="01 — Services">01 — Serviços</span>
+          <h2 class="section__title" data-reveal data-fr="Tout ce dont votre intérieur a besoin, un seul partenaire">
+            Tudo o que o seu interior precisa, num só parceiro
+          </h2>
+          <p class="section__lead" data-reveal data-fr="De la structure à la finition. Chaque service est réalisé avec rigueur technique et souci du détail.">
+            Da estrutura ao acabamento final. Cada serviço é executado com rigor técnico
+            e atenção ao pormenor.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <article class="card" data-reveal>
+            <span class="card__index">01</span>
+            <h3 class="card__title" data-fr="Rénovation intérieure">Remodelação interior</h3>
+            <p class="card__text" data-fr="Transformation complète des espaces, avec une gestion intégrale du chantier du début à la fin.">Transformação completa de espaços, com gestão integral da obra de princípio ao fim.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">02</span>
+            <h3 class="card__title" data-fr="Agencement intérieur">Agenciamento interior</h3>
+            <p class="card__text" data-fr="Organisation et optimisation des espaces pour une fonctionnalité et un confort maximum.">Organização e otimização de espaços para máxima funcionalidade e conforto.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">03</span>
+            <h3 class="card__title" data-fr="Placoplâtre">Pladur / Placoplâtre</h3>
+            <p class="card__text" data-fr="Systèmes en plaques de plâtre pour murs, plafonds et solutions techniques sur mesure.">Sistemas em gesso cartonado para paredes, tetos e soluções técnicas à medida.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">04</span>
+            <h3 class="card__title" data-fr="Faux plafonds">Tectos falsos</h3>
+            <p class="card__text" data-fr="Plafonds décoratifs et techniques avec éclairage intégré et lignes épurées.">Tetos decorativos e técnicos com iluminação integrada e linhas limpas.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">05</span>
+            <h3 class="card__title" data-fr="Cloisons">Divisórias</h3>
+            <p class="card__text" data-fr="Création et réorganisation des espaces avec des cloisons légères et bien isolées.">Criação e reorganização de espaços com divisórias leves e bem isoladas.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">06</span>
+            <h3 class="card__title" data-fr="Isolation thermique et acoustique">Isolamento térmico e acústico</h3>
+            <p class="card__text" data-fr="Plus de confort et d'efficacité, avec des solutions d'isolation haute performance.">Mais conforto e eficiência, com soluções de isolamento de alto desempenho.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">07</span>
+            <h3 class="card__title" data-fr="Microciment">Microcimento</h3>
+            <p class="card__text" data-fr="Revêtement continu, moderne et résistant pour sols et murs.">Revestimento contínuo, moderno e resistente para pavimentos e paredes.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">08</span>
+            <h3 class="card__title" data-fr="Peinture">Pintura</h3>
+            <p class="card__text" data-fr="Finitions de peinture impeccables, avec une préparation soignée des surfaces.">Acabamentos de pintura impecáveis, com preparação cuidada de superfícies.</p>
+            <span class="card__arrow">→</span>
+          </article>
+
+          <article class="card" data-reveal>
+            <span class="card__index">09</span>
+            <h3 class="card__title" data-fr="Revêtements et finitions">Revestimentos e acabamentos</h3>
+            <p class="card__text" data-fr="Le détail final qui fait la différence — matériaux et finitions de qualité.">O detalhe final que faz a diferença — materiais e remates de qualidade.</p>
+            <span class="card__arrow">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INTERIORES ===================== -->
+    <section class="interiors section" id="interiores">
+      <div class="container interiors__inner">
+        <div class="interiors__media" data-reveal>
+          <div class="interiors__img" style="background-image:url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="interiors__badge">
+            <span class="interiors__badge-num">15+</span>
+            <span class="interiors__badge-txt" data-fr="ans d'expérience en intérieurs">anos de experiência em interiores</span>
+          </div>
+        </div>
+
+        <div class="interiors__text">
+          <span class="section__label" data-reveal data-fr="02 — Spécialisation">02 — Especialização</span>
+          <h2 class="section__title" data-reveal data-fr="Des espaces intérieurs pensés au millimètre">
+            Espaços interiores pensados ao milímetro
+          </h2>
+          <p class="section__lead" data-reveal data-fr="AMS_Renov transforme les espaces intérieurs en mettant l'accent sur la fonctionnalité, l'isolation, le confort, le détail et des finitions de qualité.">
+            A AMS_Renov transforma espaços interiores com foco em funcionalidade,
+            isolamento, conforto, detalhe e acabamentos de qualidade.
+          </p>
+
+          <ul class="interiors__list">
+            <li data-reveal><strong data-fr="Fonctionnalité">Funcionalidade</strong><span data-fr="Chaque espace optimisé pour votre mode de vie.">Cada espaço otimizado para a forma como vive.</span></li>
+            <li data-reveal><strong data-fr="Confort &amp; isolation">Conforto &amp; isolamento</strong><span data-fr="Des solutions thermiques et acoustiques qui se ressentent au quotidien.">Soluções térmicas e acústicas que se sentem todos os dias.</span></li>
+            <li data-reveal><strong data-fr="Détail &amp; finition">Detalhe &amp; acabamento</strong><span data-fr="Des finitions parfaites, du microciment à la peinture finale.">Remates perfeitos, do microcimento à pintura final.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS / GALERIA ===================== -->
+    <section class="gallery section" id="projetos">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <span class="section__label" data-reveal data-fr="03 — Projets">03 — Projetos</span>
+            <h2 class="section__title" data-reveal data-fr="Des transformations qui parlent d'elles-mêmes">Transformações que falam por si</h2>
+          </div>
+          <p class="section__lead section__lead--side" data-reveal data-fr="Une sélection d'espaces intérieurs — faux plafonds, placoplâtre, microciment, peinture et finitions modernes.">
+            Uma seleção de ambientes interiores — tetos falsos, pladur, microcimento,
+            pintura e acabamentos modernos.
+          </p>
+        </header>
+      </div>
+
+      <div class="gallery__grid container">
+        <figure class="gallery__item gallery__item--tall" data-reveal data-parallax>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Sala remodelada com acabamentos modernos" />
+          <figcaption><span data-fr="Salon · Microciment">Sala · Microcimento</span><span class="gallery__plus">+</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item" data-reveal data-parallax>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=900&q=80" alt="Cozinha com acabamentos interiores" />
+          <figcaption><span data-fr="Cuisine · Finitions">Cozinha · Acabamentos</span><span class="gallery__plus">+</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item" data-reveal data-parallax>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Quarto com tecto falso e iluminação" />
+          <figcaption><span data-fr="Chambre · Faux plafond">Quarto · Tecto falso</span><span class="gallery__plus">+</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--wide" data-reveal data-parallax>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Interior amplo renovado" />
+          <figcaption><span data-fr="Open space · Placoplâtre">Open space · Pladur</span><span class="gallery__plus">+</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item" data-reveal data-parallax>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=900&q=80" alt="Detalhe de parede com revestimento" />
+          <figcaption><span data-fr="Mur · Revêtement">Parede · Revestimento</span><span class="gallery__plus">+</span></figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--tall" data-reveal data-parallax>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Espaço interior minimalista e moderno" />
+          <figcaption><span data-fr="Hall · Peinture">Hall · Pintura</span><span class="gallery__plus">+</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESSO ===================== -->
+    <section class="process section" id="processo">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-reveal data-fr="04 — Processus">04 — Processo</span>
+          <h2 class="section__title" data-reveal data-fr="Du premier contact au chantier terminé">Do primeiro contacto à obra concluída</h2>
+        </header>
+
+        <div class="process__steps">
+          <div class="process__line" aria-hidden="true"></div>
+
+          <div class="step" data-reveal>
+            <span class="step__num">01</span>
+            <h3 class="step__title" data-fr="Premier contact">Contacto inicial</h3>
+            <p class="step__text" data-fr="Contactez-nous et partagez votre idée. Nous écoutons vos besoins.">Fale connosco e partilhe a sua ideia. Ouvimos o que precisa.</p>
+          </div>
+
+          <div class="step" data-reveal>
+            <span class="step__num">02</span>
+            <h3 class="step__title" data-fr="Analyse de l'espace">Análise do espaço</h3>
+            <p class="step__text" data-fr="Nous visitons et évaluons l'espace pour trouver la meilleure approche.">Visitamos e avaliamos o espaço para perceber o melhor caminho.</p>
+          </div>
+
+          <div class="step" data-reveal>
+            <span class="step__num">03</span>
+            <h3 class="step__title" data-fr="Devis gratuit">Orçamento gratuito</h3>
+            <p class="step__text" data-fr="Nous présentons une proposition claire, détaillée et sans engagement.">Apresentamos uma proposta clara, detalhada e sem compromisso.</p>
+          </div>
+
+          <div class="step" data-reveal>
+            <span class="step__num">04</span>
+            <h3 class="step__title" data-fr="Exécution avec suivi">Execução com acompanhamento</h3>
+            <p class="step__text" data-fr="Nous réalisons le chantier avec rigueur et un suivi à chaque étape.">Executamos a obra com rigor e acompanhamento em cada fase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="about section" id="sobre">
+      <div class="container about__inner">
+        <span class="section__label" data-reveal data-fr="05 — À propos">05 — Sobre</span>
+        <h2 class="about__title" data-reveal data-fr-html="AMS_Renov est une entreprise &lt;em&gt;luso-française&lt;/em&gt; spécialisée dans les rénovations intérieures.">
+          A AMS_Renov é uma empresa <em>luso-francesa</em> especializada em remodelações interiores.
+        </h2>
+        <p class="about__text" data-reveal data-fr="Placoplâtre, isolation, microciment, peinture et finitions. Nous travaillons avec souci du détail, engagement et qualité pour transformer les espaces et créer des ambiances plus confortables, modernes et fonctionnelles.">
+          Pladur, isolamento, microcimento, pintura e acabamentos. Trabalhamos com
+          atenção ao detalhe, compromisso e qualidade para transformar espaços e criar
+          ambientes mais confortáveis, modernos e funcionais.
+        </p>
+        <div class="about__flags" data-reveal>
+          <span>🇵🇹 Portugal</span><span class="sep">·</span><span>🇫🇷 France</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INFO PRÁTICA ===================== -->
+    <section class="info">
+      <div class="container info__grid">
+        <a href="tel:+351926548398" class="info__card" data-reveal data-magnetic>
+          <span class="info__label" data-fr="Téléphone">Telefone</span>
+          <span class="info__value">926 548 398</span>
+          <span class="info__sub" data-fr="Appelez-nous">Ligue e fale connosco</span>
+        </a>
+        <div class="info__card" data-reveal>
+          <span class="info__label" data-fr="Adresse">Morada</span>
+          <span class="info__value">Travessa Francisco Sá Carneiro</span>
+          <span class="info__sub">4450-786 Matosinhos · Portugal</span>
+        </div>
+        <div class="info__card" data-reveal>
+          <span class="info__label" data-fr="Horaires">Horário</span>
+          <span class="info__value" data-fr="Lun — Ven · 07:30–19:00">Seg — Sex · 07:30–19:00</span>
+          <span class="info__sub" data-fr="Samedi et dimanche : fermé">Sábado e domingo: encerrado</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTEMUNHOS ===================== -->
+    <section class="testimonials section">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-reveal data-fr="06 — Témoignages">06 — Testemunhos</span>
+          <h2 class="section__title" data-reveal data-fr="Ce qu'ils disent de notre travail">O que dizem sobre o nosso trabalho</h2>
+        </header>
+
+        <div class="testimonials__grid">
+          <figure class="quote" data-reveal>
+            <div class="quote__stars">★★★★★</div>
+            <blockquote data-fr="« Un travail impeccable du début à la fin. Le microciment est exactement comme nous l'imaginions et le suivi a été excellent. »">“Trabalho impecável do início ao fim. O microcimento ficou exatamente como imaginávamos e o acompanhamento foi excelente.”</blockquote>
+            <figcaption data-fr="Client à Matosinhos">Cliente em Matosinhos</figcaption>
+          </figure>
+
+          <figure class="quote" data-reveal>
+            <div class="quote__stars">★★★★★</div>
+            <blockquote data-fr="« Des professionnels sérieux et attentifs aux détails. Le placoplâtre et les faux plafonds ont complètement transformé l'appartement. »">“Profissionais sérios e atentos ao detalhe. O pladur e os tetos falsos transformaram completamente o apartamento.”</blockquote>
+            <figcaption data-fr="Client à Porto">Cliente no Porto</figcaption>
+          </figure>
+
+          <figure class="quote" data-reveal>
+            <div class="quote__stars">★★★★★</div>
+            <blockquote data-fr="« Délais et budget respectés. Je recommande à ceux qui recherchent qualité et une finition moderne et épurée. »">“Cumpriram prazos e orçamento. Recomendo a quem procura qualidade e um acabamento moderno e limpo.”</blockquote>
+            <figcaption data-fr="Client à Leça da Palmeira">Cliente em Leça da Palmeira</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTOS ===================== -->
+    <section class="contact section" id="contactos">
+      <div class="container contact__inner">
+        <div class="contact__left">
+          <span class="section__label" data-reveal data-fr="07 — Contact">07 — Contactos</span>
+          <h2 class="contact__title" data-reveal data-fr="Demandez votre devis gratuit">Peça o seu orçamento gratuito</h2>
+          <p class="contact__lead" data-reveal data-fr="Dites-nous ce que vous avez en tête. Nous répondons avec une proposition claire, sans engagement. Nous intervenons à Matosinhos, Porto et alentours.">
+            Conte-nos o que tem em mente. Respondemos com uma proposta clara, sem
+            compromisso. Servimos Matosinhos, Porto e arredores.
+          </p>
+
+          <div class="contact__cta" data-reveal>
+            <a href="https://wa.me/351926548398?text=Ol%C3%A1%20AMS_Renov%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento."
+               target="_blank" rel="noopener" class="btn btn--whatsapp" data-magnetic>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.748-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              WhatsApp
+            </a>
+            <a href="tel:+351926548398" class="btn btn--dark" data-magnetic data-fr="Appeler maintenant">Ligar agora</a>
+          </div>
+
+          <div class="contact__meta">
+            <div data-reveal><span data-fr="Localisation">Localização</span><strong>Matosinhos / Porto</strong></div>
+            <div data-reveal><span data-fr="Horaires">Horário</span><strong data-fr="Lun–Ven · 07:30–19:00">Seg–Sex · 07:30–19:00</strong></div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" data-reveal novalidate>
+          <div class="field">
+            <input type="text" id="nome" name="nome" required placeholder=" " />
+            <label for="nome" data-fr="Nom">Nome</label>
+          </div>
+          <div class="field">
+            <input type="tel" id="telefone" name="telefone" required placeholder=" " />
+            <label for="telefone" data-fr="Téléphone">Telefone</label>
+          </div>
+          <div class="field">
+            <input type="text" id="localidade" name="localidade" placeholder=" " />
+            <label for="localidade" data-fr="Localité">Localidade</label>
+          </div>
+          <div class="field">
+            <select id="tipo" name="tipo" required>
+              <option value="" disabled selected hidden></option>
+              <option data-fr="Rénovation intérieure">Remodelação interior</option>
+              <option data-fr="Placoplâtre / Faux plafonds">Pladur / Tectos falsos</option>
+              <option data-fr="Microciment">Microcimento</option>
+              <option data-fr="Isolation thermique / acoustique">Isolamento térmico / acústico</option>
+              <option data-fr="Peinture &amp; finitions">Pintura &amp; acabamentos</option>
+              <option data-fr="Autre">Outro</option>
+            </select>
+            <label for="tipo" data-fr="Type de travaux">Tipo de obra</label>
+          </div>
+          <div class="field field--full">
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder=" "></textarea>
+            <label for="mensagem" data-fr="Message">Mensagem</label>
+          </div>
+          <button type="submit" class="btn btn--gold btn--lg field--full" data-magnetic data-fr="Pedir orçamento grátis">Pedir orçamento grátis</button>
+          <p class="contact__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="contact__map">
+          <iframe
+            title="Localização AMS_Renov — Matosinhos"
+            src="https://www.google.com/maps?q=Travessa%20Francisco%20S%C3%A1%20Carneiro%2C%204450-786%20Matosinhos&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">AMS<span class="u">_</span>RENOV</span>
+        <span class="footer__slogan" data-fr="Nous faisons la différence">Fazemos a diferença</span>
+        <span class="footer__flags">🇵🇹 🇫🇷 &nbsp;<span data-fr="Entreprise luso-française">Empresa luso-francesa</span></span>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-fr="Services">Serviços</h4>
+        <ul>
+          <li><a href="#servicos" data-fr="Rénovation intérieure">Remodelação interior</a></li>
+          <li><a href="#servicos" data-fr="Placoplâtre">Pladur / Placoplâtre</a></li>
+          <li><a href="#servicos" data-fr="Faux plafonds">Tectos falsos</a></li>
+          <li><a href="#servicos" data-fr="Microciment">Microcimento</a></li>
+          <li><a href="#servicos" data-fr="Isolation &amp; peinture">Isolamento &amp; pintura</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-fr="Contact">Contactos</h4>
+        <ul>
+          <li><a href="tel:+351926548398">926 548 398</a></li>
+          <li><a href="https://wa.me/351926548398" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>Travessa Francisco Sá Carneiro</li>
+          <li>4450-786 Matosinhos, Portugal</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-fr="Horaires">Horário</h4>
+        <ul>
+          <li data-fr="Lundi — Vendredi">Segunda — Sexta</li>
+          <li>07:30 – 19:00</li>
+          <li data-fr="Samedi · fermé">Sábado · encerrado</li>
+          <li data-fr="Dimanche · fermé">Domingo · encerrado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> AMS_Renov</span>
+      <span class="footer__disclaimer" data-fr="Démonstration visuelle non officielle">Demonstração visual não oficial</span>
+      <a href="#hero" class="footer__top-link" data-magnetic data-fr="Retour en haut ↑">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/351926548398?text=Ol%C3%A1%20AMS_Renov%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento."
+     class="fab" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.748-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- ===================== LIBS ===================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
